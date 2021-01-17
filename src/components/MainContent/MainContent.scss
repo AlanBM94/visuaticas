@@ -1,0 +1,14 @@
+.mainContent {
+    width: 100%;
+    height: 70rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 1025px)  {
+        padding: 0;
+    }
+    @media only screen and (max-width: 769px)  {
+        flex-direction: column;
+        height: auto;
+    }
+}

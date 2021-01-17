@@ -1,0 +1,47 @@
+@mixin animationContainer {
+    overflow: hidden;
+    width: 65%;
+    height: 90%;
+    margin: 0 0 0 10rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    @media only screen and (max-width: 1024px)  {
+        width: 70%;
+        margin: 0;
+    }
+}
+
+@mixin individualContainer {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    & p {
+        font-size: 1.6rem;
+        font-weight: 700;
+        @media only screen and (max-width: 480px)  {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@mixin resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & span {
+        font-size: 10rem;
+        font-weight: 700;
+        @media only screen and (max-width: 480px)  {
+            font-size: 7rem;
+        }
+    }
+}
+
+@mixin circlesContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}

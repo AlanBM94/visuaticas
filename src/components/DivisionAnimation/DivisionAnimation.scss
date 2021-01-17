@@ -1,0 +1,57 @@
+@import './../../sass/variables.scss';
+@import './../../sass/mixins.scss';
+
+.divisionContainer {
+    @include animationContainer;
+    &__individualContainer {
+        @include individualContainer;
+    }
+    &__secondDigitContainer {
+        position: relative;
+    }
+    &__resultContainer {
+        @include resultContainer;
+        & span {
+            color: $main-yellow;
+        }
+    }
+}
+
+.circlesContainer {
+    @include circlesContainer;
+}
+
+.text-result {
+    margin-top: 1rem!important;
+}
+
+.divisionResult {
+    -webkit-animation: moveToBottom 1s forwards;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-timing-function: linear;
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes moveToBottom {
+    0% {
+        top: 0px; 
+        left: 0px; 
+        color: inherit;
+        -webkit-transform: scale(1);
+    }
+    100% {
+        top: 100px; 
+        left: -25%; 
+        color: $main-yellow;
+        -webkit-transform: scale(5);
+    }
+}
+
+
+
+
+
+
+
+

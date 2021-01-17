@@ -1,0 +1,27 @@
+@import './../../sass/variables.scss';
+// TODO: do a mixin for this and failure
+.success {
+    width: 80%;
+    height: 80%;
+    background: white;
+    margin: 5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    & h3 {
+        font-size: 3rem;
+        @media only screen and (max-width: 480px)  {
+            font-size: 2rem;
+        }
+    }
+    & p {
+        font-size: 1.6rem;
+        color: $main-gray;
+        font-weight: 700;
+        @media only screen and (max-width: 480px)  {
+            font-size: 1.2rem;
+        }
+    }
+}

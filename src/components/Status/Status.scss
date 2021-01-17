@@ -1,0 +1,65 @@
+@import './../../sass/variables.scss';
+
+.status {
+    width: 60%;
+    height: 80%;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & svg {
+        width: 20rem;
+        fill: $main-gray;
+        transition: all 0.3s ease;
+        @media only screen and (max-width: 480px)  {
+            width: 10rem;
+        }
+    }
+    & p {
+        font-size: 2rem;
+        color: $main-gray;
+        margin-top: 2rem;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        @media only screen and (max-width: 480px)  {
+            font-size: 1.2rem;
+        }
+    }
+    &--green {
+        & svg {
+            fill: $main-green;
+        } 
+        & p {
+            color: $main-green;
+        }
+    }
+    &--blue {
+        & svg {
+            fill: $main-blue;
+        } 
+        & p {
+            color: $main-blue;
+        }
+    }
+    &--orange {
+        & svg {
+            fill: $main-orange;
+        } 
+        & p {
+            color: $main-orange;
+        }
+    }
+    &--yellow {
+        & svg {
+            fill: $main-yellow;
+        } 
+        & p {
+            color: $main-yellow;
+        }
+    }
+    @media only screen and (max-width: 1025px)  {
+        margin: 0;
+    }
+    
+}

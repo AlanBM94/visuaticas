@@ -1,0 +1,30 @@
+@import './../../sass/variables.scss';
+@import './../../sass/mixins.scss';
+
+.additionContainer {
+    @include animationContainer;
+    &__individualContainer {
+        @include individualContainer;
+    }
+    &__resultContainer {
+        @include resultContainer;
+        & span {
+            color: $main-green;
+        }
+    }
+}
+
+.circlesContainer {
+    @include circlesContainer;
+}
+
+.resultText {
+    margin-top: -2rem;
+}
+
+.moveToTop  {
+    transform: translateY(-37px);   
+    transition: all 1s ease;
+}
+
+

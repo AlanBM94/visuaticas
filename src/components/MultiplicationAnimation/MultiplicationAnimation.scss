@@ -1,0 +1,25 @@
+@import './../../sass/variables.scss';
+@import './../../sass/mixins.scss';
+
+.multiplicationContainer {
+    @include animationContainer;
+    overflow: scroll;
+    &__individualContainer {
+        @include individualContainer;
+    }
+    &__resultContainer {
+        @include resultContainer;
+        & span {
+            color: $main-blue;
+        }
+    }
+}
+
+.circlesContainer {
+    @include circlesContainer;
+}
+
+
+
+
+

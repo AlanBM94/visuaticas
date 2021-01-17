@@ -1,0 +1,18 @@
+@import './../../sass/variables.scss';
+
+.playButton {
+    border: 2px solid white;
+    width: 12rem;
+    height: 5rem;
+    background: transparent;
+    & i {
+        font-size: 30px;
+        color: white;
+    }
+    &--dark {
+        border: 2px solid $light-purple;
+        & i {
+            color: $light-purple;
+        }
+    }
+}

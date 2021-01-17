@@ -1,0 +1,53 @@
+@import './../../sass/variables.scss';
+@import './../../sass/mixins.scss';
+
+// TODO: do mixins for this
+
+.substractionContainer {
+    @include animationContainer;
+    position: relative;
+    &__individualContainer {
+        @include individualContainer;
+    }
+
+    &__firstDigitContainer{
+        top: 21px;
+        position: absolute;
+        display: flex;
+        height: 46px;
+        flex-direction: column;
+        // background: blue;
+    }
+    
+    &__secondDigitContainer{
+        top: 21px;
+        position: absolute;
+        display: flex;
+        height: 46px;
+        flex-direction: column;
+        background: transparent;
+        
+    }
+    &__resultContainer {
+        @include resultContainer;
+        position: absolute;
+        top: 100px;
+        left: -10px;
+        & span {
+            color: $main-orange;
+        }
+    }
+}
+
+.circlesContainer {
+    @include circlesContainer;
+}
+
+// .secondNumberSubstraction {
+//     // margin-top: -20px;
+//     background: red;
+
+//     @media only screen and (max-width: 480px)  {
+//         margin-top: -10px!important;
+//     }
+// }

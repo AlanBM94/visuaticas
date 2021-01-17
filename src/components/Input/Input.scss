@@ -1,0 +1,94 @@
+@import './../../sass/variables.scss';
+
+
+.input {
+    & label {
+        font-size: 1.5rem;
+        font-weight: 700;
+        @media only screen and (max-width: 480px)  {
+            font-size: 1.2rem!important;
+        }
+    }
+    
+    
+    & input {
+        margin-top: 5px;
+        width: 100%;
+        transition: 0.3s all ease;
+        @media only screen and (max-width: 480px)  {
+            padding: 5px!important;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    &--green {
+        & label {
+            font-size: 1.5rem;
+            color: $main-green;
+        }  
+        & input {
+            border: 2px solid $main-green;
+            padding: 10px 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &--orange {
+        & label {
+            font-size: 1.5rem;
+            color: $main-orange;
+        }
+        & input {
+            border: 2px solid $main-orange;
+            padding: 10px 5px;
+        }
+        
+    }
+    &--blue {
+        & label {
+            font-size: 1.5rem;
+            color: $main-blue;
+        }
+        & input {
+            border: 2px solid $main-blue;
+            padding: 10px 5px;
+        }
+        
+    }
+    &--yellow {
+        & label {
+            font-size: 1.5rem;
+            color: $main-yellow;
+        }
+        & input {
+            border: 2px solid $main-yellow;
+            padding: 10px 5px;
+        }
+    }
+
+    &--full {
+        &--green {
+            & input {
+                background: $main-green;
+            }
+        }
+        &--blue {
+            & input {
+                background: $main-blue;
+            }
+        }
+        &--yellow {
+            & input {
+                background: $main-yellow;
+            }
+        }
+        &--orange {
+            & input {
+                background: $main-orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.options{
+    width: 50%;
+    height: 100%;
+    background: #ECF0F1;
+    @media only screen and (max-width: 769px)  {
+        width: 100%;
+        padding: 3rem 0;
+        height: 60rem;
+    }
+}

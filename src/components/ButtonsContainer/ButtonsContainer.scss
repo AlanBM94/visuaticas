@@ -1,0 +1,64 @@
+.buttonsContainer {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: -4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+
+    &--center {
+        margin-left: 0;
+        & .playButton {
+            margin-left: -9rem;
+            @media only screen and (max-width: 1024px)  {
+                margin: 0;
+            }
+        }
+    }
+    
+    & .playButton {
+        width: 25rem;
+        height: 6rem; 
+        @media only screen and (max-width: 480px)  {
+            height: 3em;
+            width: 20rem;
+            & i {
+                font-size: 1.5em;
+            }
+        } 
+    }
+
+    & button {
+        width: 25rem;
+        @media only screen and (max-width: 480px)  {
+            width: 20rem;
+        }
+    }
+
+    @media only screen and (max-width: 1024px)  {
+        margin: 0;
+    }
+
+    @media only screen and (max-width: 769px)  {
+        height: 40rem;
+    }
+}
+
+
+.danger-alert{
+    background: rgb(255, 63, 63);
+    color: white;
+    padding: 1rem;
+    margin: 10rem auto;
+    width: fit-content;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.moveToRight {
+    margin-left: 17rem;
+}

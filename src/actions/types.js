@@ -1,0 +1,11 @@
+export const SET_COLOR = "SET_COLOR";
+export const SET_MODE = "SET_MODE";
+export const RESET_MODE = "RESET_MODE";
+export const RESET_GAME_INFO = "RESET_GAME_INFO";
+export const RESET_SIGN = "RESET_SIGN";
+export const DO_OPERATION = "DO_OPERATION";
+export const SET_USER_RESULT = "SET_USER_RESULT";
+export const SET_GAME_INFO = "SET_GAME_INFO";
+export const LOADING = "LOADING";
+export const AUDIO_IS_PLAYING = "AUDIO_IS_PLAYING";
+export const AUDIO_IS_NOT_PLAYING = "AUDIO_IS_NOT_PLAYING";
