@@ -19,6 +19,7 @@ export const createCircles = (value, properties) => {
 
 const createSpeechMessage = (message) => {
     const utterThis = new SpeechSynthesisUtterance(message);
+    utterThis.lang = "es-ES";
     return utterThis;
 };
 

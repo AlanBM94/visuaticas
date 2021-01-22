@@ -89,20 +89,23 @@ const ButtonsContainer = ({
             playAudio(
                 `La primera fila muestra el primer número que ingresaste, la segunda fila muestra el segundo número que ingresaste. Si unes los puntos en la fila el resultado es ${mode.result}`
             );
+            cancelAudioAfterTimeOut(13000);
         } else if (mode.operation === "substraction") {
             playAudio(
                 `La primera fila muestra el primer número que ingresaste, si le quitas el segundo número el resultado es ${mode.result}`
             );
+            cancelAudioAfterTimeOut(10000);
         } else if (mode.operation === "multiplication") {
             playAudio(
                 `La primera fila muestra el primer número que ingresaste, las siguientes filas representan el segundo número y el número de circulos en cada fila representa el primer número, si sumas todos los puntos el resultado es ${mode.result}`
             );
+            cancelAudioAfterTimeOut(17000);
         } else if (mode.operation === "division") {
             playAudio(
                 `La primera fila muestra el primer número que ingresaste, la segunda fila muestra el segundo número que ingresaste. El segundo número cabe ${mode.result} veces en el primero.`
             );
+            cancelAudioAfterTimeOut(15000);
         }
-        cancelAudioAfterTimeOut(5000);
     };
 
     const playSolvedOperationAudio = () => {

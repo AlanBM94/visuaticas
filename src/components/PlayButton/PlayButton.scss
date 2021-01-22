@@ -5,14 +5,32 @@
     width: 12rem;
     height: 5rem;
     background: transparent;
+    transition: 0.3s all ease;
+
     & i {
         font-size: 30px;
         color: white;
     }
+
+    &:hover {
+        background: white;
+        color: $light-purple;
+        & i {
+            color: $light-purple;
+        }
+    }
+
     &--dark {
         border: 2px solid $light-purple;
         & i {
             color: $light-purple;
+        }
+        &:hover {
+            color: white;
+            background: $light-purple;
+            & i {
+                color: white;
+            }
         }
     }
 }
